@@ -9,13 +9,13 @@
 - b)"what factors affect how popular a YouTube video will be ?"
 
 
- **Why YouTube?**
+## **Why YouTube?**
  Top three most-visited websites(monthly)
  - Google: 92.5 billion
  - YouTube: 34.6 billion
  - Facebook: 25.5 billion
 
- **Things covered in this project but not limited to:**
+ ## **Things covered in this project but not limited to:**
  - to build a data lake from scratch in amazon s3 (joining semi-structured and structured data).
  - Lake House architecture design (Best practices ---> cost and performance).
  - Data Lake vs Data Warehouse
