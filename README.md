@@ -1,7 +1,7 @@
 # YouTube-Data-Analysis-END-TO-END-DATA-ENGINEERING-PROJECT
 
 
-The requirement for (our simulated) customer:
+**The requirement for (our simulated) customer:**
 1. Launching new data driven campaign
 2. Main advertising channel: YouTube
 3. Initial Questions to answer:
