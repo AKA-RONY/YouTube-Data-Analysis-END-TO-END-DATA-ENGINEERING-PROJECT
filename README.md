@@ -5,8 +5,8 @@ The requirement for (our simulated) customer:
 1. Launching new data driven campaign
 2. Main advertising channel: YouTube
 3. Initial Questions to answer:
-       - a)"how to categorise videos, based on their comments and statistics ?"
-       - b)"what factors affect how popular a YouTube video will be ?"
+- a)"how to categorise videos, based on their comments and statistics ?"
+- b)"what factors affect how popular a YouTube video will be ?"
 
 
  Why YouTube?
