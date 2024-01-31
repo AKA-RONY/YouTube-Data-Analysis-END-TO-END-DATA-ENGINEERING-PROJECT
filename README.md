@@ -16,7 +16,7 @@ The requirement for (our simulated) customer:
  . Facebook: 25.5 billion
 
  Things covered in this project but not limited to:
- . to build a data lake from scratch in amazon s3 (joining semi-structured and structured data).
+ - to build a data lake from scratch in amazon s3 (joining semi-structured and structured data).
  . Lake House architecture design (Best practices ---> cost and performance).
  . Data Lake vs Data Warehouse
  . Data Lake design in layers, partitioned for cost-performance (eg- landing,cleansed as SSOT, reporting for BI users , WORM Model/ Write Once Read Many).
