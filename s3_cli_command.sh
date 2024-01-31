@@ -1,3 +1,9 @@
+C:\Users\rony>aws configure
+AWS Access Key ID [None]: secret_id
+AWS Secret Access Key [None]: secret_key
+Default region name [None]: us-east-1
+Default output format [None]:
+
 #Replace It With Your Bucket Name
 
 # To copy all JSON Reference data to same location:
