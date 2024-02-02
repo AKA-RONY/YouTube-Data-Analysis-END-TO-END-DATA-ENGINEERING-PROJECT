@@ -22,7 +22,8 @@ aws s3 cp RUvideos.csv s3://de-on-youtube-project-raw-useast-1-dev/youtube/raw_s
 aws s3 cp USvideos.csv s3://de-on-youtube-project-raw-useast-1-dev/youtube/raw_statistics/region=us/
 
 #some useful commands
-
+cd     # change directory
+dir    # list all the file elements in the directory
 
 
 
