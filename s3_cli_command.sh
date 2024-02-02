@@ -21,6 +21,13 @@ aws s3 cp MXvideos.csv s3://de-on-youtube-project-raw-useast-1-dev/youtube/raw_s
 aws s3 cp RUvideos.csv s3://de-on-youtube-project-raw-useast-1-dev/youtube/raw_statistics/region=ru/
 aws s3 cp USvideos.csv s3://de-on-youtube-project-raw-useast-1-dev/youtube/raw_statistics/region=us/
 
+#some useful commands
+
+
+
 
 #To get your AWS account id with the AWS CLI you run the following command:
 aws sts get-caller-identity --query "Account" --output text  #This will return your 12-digit identification number in plain text.
+aws sts get-caller-identity  # command to immediately get the AWS Account details.
+
+
