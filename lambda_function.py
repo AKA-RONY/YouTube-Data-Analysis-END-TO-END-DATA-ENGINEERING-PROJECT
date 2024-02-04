@@ -1,4 +1,12 @@
+#things did while creating the function: 
+'''
+1. added environment variables 
+2. added specific role/permission for the lambda function [AmazonS3FullAccess , AWSGlueServiceRole, AWSLambda_FullAccess , AWSLambdaBasicExecutionRole]
+3. increased lambda execution time by 3 mins & allocated 512 mb memory for compute.
+4. added lambda layers [ AWSLambdaPowertoolsPythonV2 , AWSSDKPandas-Python311]
+5. 
 
+'''
         
 import awswrangler as wr
 import pandas as pd
