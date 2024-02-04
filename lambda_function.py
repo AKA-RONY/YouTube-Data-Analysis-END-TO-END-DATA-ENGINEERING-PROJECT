@@ -1,10 +1,10 @@
 #things did while creating the function: 
 '''
-1. added environment variables 
+1. added environment variables [glue_catalog_db_name , glue_catalog_table_name , s3_cleansed_layer, write_data_operation ]
 2. added specific role/permission for the lambda function [AmazonS3FullAccess , AWSGlueServiceRole, AWSLambda_FullAccess , AWSLambdaBasicExecutionRole]
 3. increased lambda execution time by 3 mins & allocated 512 mb memory for compute.
 4. added lambda layers [ AWSLambdaPowertoolsPythonV2 , AWSSDKPandas-Python311]
-5. 
+
 
 '''
         
