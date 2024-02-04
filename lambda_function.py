@@ -1,3 +1,5 @@
+
+        
 import awswrangler as wr
 import pandas as pd
 import os
@@ -12,7 +14,7 @@ os_input_write_data_operation = os.environ['write_data_operation']
 
 def lambda_handler(event, context):
     # Get the object from the event and show its content type
-    bucket = event['Records'][0]['s3']['bucket']['name']
+    bucket = event['Records'][0]['s3']['bucket']['name'] #the bucket and key is fetched from the event i.e when we perform 'configure-test-event' while we 'Test' the function inside s3 template we manually provided the s3 bucket_name as well as the key for individual file location; so when  we run the lambda function it fetch the bucket name as well as the key name from the event. 
     key= urllib.parse.unquote_plus(event['Records'][0]['s3']['object']['key'],encoding='utf-8')
     
     try:
@@ -38,4 +40,22 @@ def lambda_handler(event, context):
     except Exception as e:
         print(e)
         print('Error getting object {} from bucket {}. make sure they exist and your bucket is in the same region as this function '.format(key,bucket))
-        raise e
+        raise e        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
