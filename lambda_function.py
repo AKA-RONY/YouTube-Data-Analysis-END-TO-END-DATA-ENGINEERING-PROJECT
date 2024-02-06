@@ -31,7 +31,7 @@ def lambda_handler(event, context):
         df_raw= wr.s3.read_json('s3://{}/{}'.format(bucket,key))
         
         #extract required columns:
-        df_step_1= pd.json_normalize(df_raw['items'])
+        df_step_1= pd.json_normalize(df_raw['items']) #Normalizes JSON data by flattening nested structures. It assumes a key 'items' in the JSON structure.
         
         
         #write to s3
