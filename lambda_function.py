@@ -39,7 +39,7 @@ def lambda_handler(event, context):
             df=df_step_1,
             path=os_input_s3_cleansed_layer,
             dataset=True,
-            database=os_input_glue_catalog_db_name,
+            database=os_input_glue_catalog_db_name, #trying to create glue catalog and glue table here
             table=os_input_glue_catalog_table_name,
             mode=os_input_write_data_operation
             )
