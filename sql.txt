@@ -1,4 +1,5 @@
--- region wise avg_views data
+--1. region wise avg_views data
+
 SELECT DISTINCT
     c.id,
     c.snippet_title,
@@ -16,3 +17,39 @@ GROUP BY
     
 ORDER BY
      avg_views desc;
+------------------------------------------------------------------------------------------
+
+
+--2. query to fetch all the different category_id snippet_title that is present in the cleansed json data along with category_id that is present in the raw statistics data i.e the csv data, found out that some of the categories data are missing         in raw csv data.
+
+select distinct
+    c.id, (c.snippet_title) ,
+    r.category_id as raw_category 
+from 
+    "de-youtube-cleansed"."cleaned_statistics_reference_data" c left 
+join 
+    "de-youtube-raw".raw_statistics r on c.id= r.category_id  order by c.id ;
+-------------------------------------------------------------------------------------------
+
+--3 find distinct categories
+
+select 
+    (snippet_title) 
+from 
+    "de-youtube-cleansed"."cleaned_statistics_reference_data";
+-------------------------------------------------------------------------------------------
+
+--4 to check if any category is repeated , (yes its 'Comedy')
+
+SELECT 
+    snippet_title
+FROM 
+    "de-youtube-cleansed"."cleaned_statistics_reference_data"
+GROUP BY 
+    snippet_title
+HAVING COUNT(*) > 1;
+
+-------------------------------------------------------------------------------------------
+
+
+
