@@ -1,0 +1,18 @@
+-- region wise avg_views data
+SELECT DISTINCT
+    c.id,
+    c.snippet_title,
+    r.category_id AS raw_category,
+    AVG(r.views) AS avg_views
+FROM
+    "de-youtube-cleansed"."cleaned_statistics_reference_data" c
+JOIN
+    "de-youtube-raw".raw_statistics r ON c.id = r.category_id
+    WHERE region ='us'
+GROUP BY
+    c.id,
+    c.snippet_title,
+    r.category_id
+    
+ORDER BY
+     avg_views desc;
