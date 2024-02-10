@@ -24,6 +24,7 @@ aws s3 cp USvideos.csv s3://de-on-youtube-project-raw-useast-1-dev/youtube/raw_s
 #some useful commands
 cd     # change directory
 dir    # list all the file elements in the directory
+aws s3 ls # to list all the s3 buckets
 
 
 
